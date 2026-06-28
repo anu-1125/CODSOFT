@@ -8,101 +8,185 @@
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
+<!-- NAVIGATION HEADER -->
 <header>
     <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-calendar-check"></i> EventX
+        </div>
 
-        <div class="logo">EventX</div>
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#features">Features</a>
             <a href="#contact">Contact</a>
+            <a href="#contact" class="btn btn-nav">Book Now</a>
         </div>
-
     </nav>
 </header>
-<!-- HERO -->
-<section id="home" class="hero">
 
+<!-- HERO SECTION -->
+<section id="home" class="hero">
     <div class="hero-text">
         <h1>Plan Your Dream Event With Confidence</h1>
         <p>
             EventX helps you discover, book and manage weddings,
             birthdays, corporate events and celebrations from one platform.
         </p>
-
-        <a href="#contact" class="btn">Book Now</a>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Book Now</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
     </div>
 
     <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=900" alt="event">
+        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=900" alt="event planning illustration">
     </div>
-
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT SECTION -->
 <section id="about" class="about">
-    <h2>About EventX</h2>
-    <p>
-        EventX is a modern event management platform designed
-        to simplify event planning. Whether it's a wedding,
-        conference or birthday celebration, our platform
-        helps users book and manage everything with ease.
-    </p>
+    <div class="about-container">
+        <h2>About EventX</h2>
+        <p>
+            EventX is a modern event management platform designed
+            to simplify event planning. Whether it's a wedding,
+            conference or birthday celebration, our platform
+            helps users book and manage everything with ease.
+        </p>
+        <div class="about-features">
+            <div class="about-item">
+                <i class="fas fa-check-circle"></i>
+                <h3>Professional Team</h3>
+                <p>Expert event organizers at your service</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-clock"></i>
+                <h3>Quick Turnaround</h3>
+                <p>Get your event planned in record time</p>
+            </div>
+            <div class="about-item">
+                <i class="fas fa-star"></i>
+                <h3>Top Rated</h3>
+                <p>Trusted by thousands of happy clients</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-
+<!-- SERVICES SECTION -->
 <section id="services">
     <h2>Our Services</h2>
-
     <div class="cards">
         <div class="card">
+            <i class="fas fa-champagne-glasses"></i>
             <h3>🎉 Event Booking</h3>
-            <p>Book weddings, concerts, birthday parties and seminars.</p>
+            <p>Book weddings, concerts, birthday parties and seminars with ease.</p>
+            <a href="#contact" class="card-link">Learn More →</a>
         </div>
 
         <div class="card">
+            <i class="fas fa-calendar-days"></i>
             <h3>📅 Event Planning</h3>
-            <p>Manage guests, venue and schedule efficiently.</p>
+            <p>Manage guests, venue and schedule efficiently in one dashboard.</p>
+            <a href="#contact" class="card-link">Learn More →</a>
         </div>
 
         <div class="card">
+            <i class="fas fa-lock"></i>
             <h3>💳 Secure Payments</h3>
-            <p>Safe online booking with trusted payment methods.</p>
+            <p>Safe online booking with trusted payment methods and encryption.</p>
+            <a href="#contact" class="card-link">Learn More →</a>
         </div>
     </div>
 </section>
 
-<!-- FEATURES -->
+<!-- FEATURES SECTION -->
 <section id="features">
     <h2>Why Choose EventX?</h2>
 
     <div class="feature-grid">
-        <div>✔ Easy Booking</div>
-        <div>✔ Professional Organizers</div>
-        <div>✔ Affordable Packages</div>
-        <div>✔ Secure Payments</div>
-        <div>✔ 24×7 Support</div>
-        <div>✔ Fast Response</div>
+        <div class="feature-item">
+            <i class="fas fa-mouse-pointer"></i>
+            <p>✔ Easy Booking</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-user-tie"></i>
+            <p>✔ Professional Organizers</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-tag"></i>
+            <p>✔ Affordable Packages</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-credit-card"></i>
+            <p>✔ Secure Payments</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-headset"></i>
+            <p>✔ 24×7 Support</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-bolt"></i>
+            <p>✔ Fast Response</p>
+        </div>
     </div>
 </section>
 
-<!-- CONTACT -->
+<!-- CONTACT SECTION -->
 <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@eventx.com</p>
-    <p>Phone: +91 9876543210</p>
-    <p>Location: Thrissur, Kerala</p>
+    <h2>Get In Touch</h2>
+    <div class="contact-content">
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h3>Email</h3>
+                    <a href="mailto:support@eventx.com">support@eventx.com</a>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                    <h3>Phone</h3>
+                    <a href="tel:+919876543210">+91 9876543210</a>
+                </div>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h3>Location</h3>
+                    <p>Thrissur, Kerala</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 EventX | Designed by Anupama M S</p>
+    <div class="footer-content">
+        <p>&copy; 2026 EventX | Designed by Anupama M S</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
