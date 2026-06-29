@@ -1,4 +1,4 @@
-// Mobile Menu Toggle
+
 const menuToggle = document.getElementById('menuToggle');
 const menu = document.getElementById('menu');
 
@@ -7,7 +7,7 @@ menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
 });
 
-// Close menu when a link is clicked
+
 const menuLinks = menu.querySelectorAll('a');
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -30,7 +30,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add scroll effect to header
+
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (window.scrollY > 50) {
@@ -40,7 +40,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Intersection Observer for scroll animations
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px'
@@ -61,7 +61,7 @@ document.querySelectorAll('.card, .feature-item, .about-item').forEach(el => {
     observer.observe(el);
 });
 
-// Add keyboard navigation support
+
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && menu.classList.contains('active')) {
         menu.classList.remove('active');
@@ -69,7 +69,7 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// Add animation style to stylesheet dynamically
+
 const style = document.createElement('style');
 style.textContent = `
     @keyframes fadeInUp {
@@ -85,12 +85,11 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Prevent menu from closing when clicking on the button
+
 menuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (!menu.contains(e.target) && !menuToggle.contains(e.target)) {
         if (menu.classList.contains('active')) {
